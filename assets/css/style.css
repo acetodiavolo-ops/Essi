@@ -39,6 +39,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-h) + 12px);
   -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -62,6 +63,7 @@ h1, h2, h3, h4 {
   line-height: 1.12;
   font-weight: 700;
   letter-spacing: -.01em;
+  text-wrap: balance;
 }
 
 .txt-green { color: var(--green); }
@@ -304,6 +306,7 @@ h1, h2, h3, h4 {
   font-size: clamp(1.05rem, 2.4vw, 1.4rem);
   font-weight: 500;
   color: rgba(255, 255, 255, .95);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .35);
 }
 .hero__lead em { font-style: italic; }
 
@@ -313,6 +316,7 @@ h1, h2, h3, h4 {
   margin-inline: auto;
   color: rgba(255, 255, 255, .88);
   font-size: 1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .35);
 }
 .hero__cta { margin-top: 1.8rem; }
 
@@ -326,16 +330,16 @@ h1, h2, h3, h4 {
   text-align: left;
 }
 .feature-card {
-  background: rgba(255, 255, 255, .1);
-  border: 1px solid rgba(255, 255, 255, .22);
-  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, .12);
+  border: 1px solid rgba(255, 255, 255, .26);
+  backdrop-filter: blur(10px);
   border-radius: var(--radius-sm);
   padding: 1.3rem 1.4rem;
   transition: transform .3s var(--ease), background-color .3s var(--ease);
 }
 .feature-card:hover { transform: translateY(-4px); background: rgba(255, 255, 255, .18); }
-.feature-card__title { color: #fff; font-size: 1.06rem; margin-bottom: .35rem; }
-.feature-card__text { color: rgba(255, 255, 255, .85); font-size: .92rem; line-height: 1.55; }
+.feature-card__title { color: #fff; font-size: 1.06rem; margin-bottom: .35rem; text-shadow: 0 1px 2px rgba(0, 0, 0, .35); }
+.feature-card__text { color: rgba(255, 255, 255, .85); font-size: .92rem; line-height: 1.55; text-shadow: 0 1px 2px rgba(0, 0, 0, .35); }
 
 /* ---------- Generic section ---------- */
 .section { padding-block: clamp(3.5rem, 8vw, 7rem); }
@@ -357,6 +361,7 @@ h1, h2, h3, h4 {
   margin-top: 1rem;
   color: var(--body);
   font-size: 1.06rem;
+  text-wrap: pretty;
 }
 .section__lead--center { text-align: center; }
 
@@ -732,6 +737,20 @@ h1, h2, h3, h4 {
   .lang__item.is-active { border-color: var(--green); color: var(--green-dark); }
 }
 
+/* ---------- Mobile refinement · M1 foundations & rhythm ---------- */
+@media (max-width: 860px) {
+  :root { --header-h: 64px; }   /* shorter fixed bar; every offset tracks --header-h automatically */
+}
+@media (max-width: 600px) {
+  .section       { padding-block: clamp(2.5rem, 9vw, 3.4rem); }  /* was min 3.5rem — denser, less sparse */
+  .section__head { margin-bottom: clamp(1.5rem, 6vw, 2.3rem); }
+  .service       { padding-block: clamp(2.2rem, 8vw, 3.2rem); }
+  .testimonials  { background-attachment: scroll; }              /* fixed parallax is janky on mobile */
+  .section__lead--center { text-align: left; }                   /* M3: long body copy reads better left-aligned on phones (headings stay centered) */
+  .contact-form-card__actions .btn { width: 100%; }              /* M4: full-width, tappable submit */
+  .btn--sm { padding: .85rem 1.6rem; }                           /* M4: larger tap target (~42px tall) */
+}
+
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -941,6 +960,7 @@ h1, h2, h3, h4 {
   .articles { grid-template-columns: 1fr; }
   .service__foot { flex-direction: column; align-items: stretch; }
   .service__foot .btn { align-self: flex-start; }
+  .service__img img { aspect-ratio: 2 / 1; }   /* M3: shorter wide band when photos stack (was 16/10) */
 }
 
 /* =========================================================
