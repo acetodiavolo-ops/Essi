@@ -651,19 +651,19 @@ h1, h2, h3, h4 {
 }
 .reveal.in-view { opacity: 1; transform: none; }
 
-/* Hero entrance (staggered) */
-[data-hero] > * {
-  opacity: 0;
-  transform: translateY(26px);
-  animation: heroIn .8s var(--ease) forwards;
+/* Hero entrance (staggered).
+   Content is VISIBLE BY DEFAULT — the hidden start state lives only in the keyframe and the
+   animation is gated to motion-OK users, so if the animation never fires (mobile paint-holding,
+   throttling, reduced motion) the hero text is never left stuck at opacity:0. */
+@keyframes heroIn { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: no-preference) {
+  [data-hero] > * { animation: heroIn .8s var(--ease) both; }
+  [data-hero] > *:nth-child(1) { animation-delay: .15s; }
+  [data-hero] > *:nth-child(2) { animation-delay: .30s; }
+  [data-hero] > *:nth-child(3) { animation-delay: .45s; }
+  [data-hero] > *:nth-child(4) { animation-delay: .60s; }
+  [data-hero] .hero__features { animation-delay: .75s; }
 }
-[data-hero] > *:nth-child(1) { animation-delay: .15s; }
-[data-hero] > *:nth-child(2) { animation-delay: .30s; }
-[data-hero] > *:nth-child(3) { animation-delay: .45s; }
-[data-hero] > *:nth-child(4) { animation-delay: .60s; }
-[data-hero] .hero__features { animation-delay: .75s; }
-
-@keyframes heroIn { to { opacity: 1; transform: none; } }
 
 /* =========================================================
    Responsive
