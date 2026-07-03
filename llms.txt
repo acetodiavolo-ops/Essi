@@ -1,0 +1,44 @@
+# MarketingPro
+
+> MarketingPro is a digital marketing agency with offices in Durres, Albania and Fano, Italy. We run marketing that brings in real customers, not just leads: we generate the leads, call and qualify them ourselves, and hand over people who are ready to buy or ask for a quote.
+
+MarketingPro works with businesses across Albania and Italy, in English and Italian. The team covers the full picture, from social media and paid advertising to websites, SEO, sales funnels, photo and video, 3D renders and print catalogues. The angle that runs through everything is qualification: every lead is contacted and filtered before it reaches the client, so sales teams spend their time on people who actually want to talk business.
+
+- Business name: MarketingPro (Digital Marketing Agency)
+- Locations: Rr. Sheshi Liria, Durres, Albania · Via Carlo Gozzi, Fano (PU), Italy
+- Contact: commerciale@marketingpro-agency.com · +355 694702405 (also WhatsApp)
+- Languages: English, Italian
+
+## Main pages
+
+- [Home](https://www.marketingpro-agency.com/): what MarketingPro does and how the qualify-every-lead model works.
+- [Services](https://www.marketingpro-agency.com/services.html): the eight services in detail, from social media to catalogues.
+- [About](https://www.marketingpro-agency.com/about.html): the story, the team and why clients work with us.
+- [Portfolio](https://www.marketingpro-agency.com/portfolio.html): selected work and results.
+- [Contact](https://www.marketingpro-agency.com/contact.html): phone, email, WhatsApp and both office addresses.
+
+## Services
+
+- Social media management
+- Advertising campaigns (Meta and Google)
+- Website creation
+- SEO
+- Sales funnels
+- Photo and video editing
+- Photorealistic renders
+- Print catalogues
+
+## Guides and articles
+
+- [Social Media Management: Turning Followers into Loyal Customers](https://www.marketingpro-agency.com/blog-social-media.html)
+- [Advertising Campaigns That Actually Convert](https://www.marketingpro-agency.com/blog-advertising.html)
+- [Your Website Is Your Hardest-Working Salesperson](https://www.marketingpro-agency.com/blog-website.html)
+- [SEO in 2026: Climb the Rankings and Stay There](https://www.marketingpro-agency.com/blog-seo.html)
+- [A Sales Funnel That Closes: From Stranger to Signed Contract](https://www.marketingpro-agency.com/blog-sales-funnel.html)
+- [Why Professional Photo & Video Editing Elevates Your Brand](https://www.marketingpro-agency.com/blog-photo-video.html)
+- [Photorealistic Renders: Sell the Vision Before It's Built](https://www.marketingpro-agency.com/blog-renders.html)
+- [Catalogues That Sell: From Product List to Visual Experience](https://www.marketingpro-agency.com/blog-catalogues.html)
+
+## Italian
+
+An Italian version of the whole site lives under [/it/](https://www.marketingpro-agency.com/it/), including [Servizi](https://www.marketingpro-agency.com/it/services.html) and the [Blog](https://www.marketingpro-agency.com/it/blog.html).

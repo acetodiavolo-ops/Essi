@@ -1,0 +1,6 @@
+# Source material — curated/optimized in a separate session, not part of the deployed site
+originals/
+
+# OS / editor cruft
+Thumbs.db
+.DS_Store

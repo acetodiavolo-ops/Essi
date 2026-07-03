@@ -1,0 +1,43 @@
+# robots.txt — https://www.marketingpro-agency.com/
+# MarketingPro Digital Marketing Agency
+
+# Default: allow all crawlers to index the whole site (except the archived originals)
+User-agent: *
+Allow: /
+Disallow: /originals/
+
+# AI / answer-engine crawlers are explicitly welcome (Generative Engine Optimization).
+# We want MarketingPro surfaced and cited in AI search and assistants.
+User-agent: GPTBot
+Allow: /
+Disallow: /originals/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /originals/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /originals/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /originals/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /originals/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /originals/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /originals/
+
+User-agent: CCBot
+Allow: /
+Disallow: /originals/
+
+Sitemap: https://www.marketingpro-agency.com/sitemap.xml
